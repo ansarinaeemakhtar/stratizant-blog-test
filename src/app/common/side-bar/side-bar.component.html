@@ -1,0 +1,27 @@
+<div class="d-flex flex-column p-3">
+  <a href="/" class="d-flex align-items-center text-white text-decoration-none">
+    <span class="fs-4">All Posts</span>
+  </a>
+  <hr>
+  <ul class="nav nav-pills flex-column mb-auto">
+    <li class="nav-item">
+      <a routerLink="/posts" routerLinkActive="active" class="nav-link text-white">
+        All posts
+      </a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="/comments" routerLinkActive="active" #rla="routerLinkActive" class="nav-link text-white">
+        All comments
+      </a>
+    <li class="nav-item">
+      <a routerLink="/create" routerLinkActive="active" class="nav-link text-white">
+        Create a new post
+      </a>
+    </li>
+    <li>
+      <a routerLink="/settings" routerLinkActive="active" class="nav-link text-white">
+        Profile settings
+      </a>
+    </li>
+  </ul>
+</div>

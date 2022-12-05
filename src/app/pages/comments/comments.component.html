@@ -1,0 +1,11 @@
+<h3 class="display-6 mb-2">Comments</h3>
+<hr class="mb-5">
+<article class="blog-post-container px-3 mb-5">
+  <div class="blog-post mb-4" *ngFor="let comment of comments | paginate: { itemsPerPage: 10, currentPage: p };">
+    <h2 class="blog-post-title mb-2">{{comment.id}}. {{comment.name}}</h2>
+    <p class="cutoff-text">{{comment.body}}</p>
+    <a class="btn btn-link px-0" routerLink="/comment/{{comment.id}}">Read more</a>
+    <hr>
+  </div>  
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>
+</article>

@@ -1,0 +1,9 @@
+ul, ol {
+  padding: 1rem;
+  margin: 0;
+}
+
+::ng-deep ul.ngx-pagination {
+  margin: auto;
+  text-align: center;
+}
